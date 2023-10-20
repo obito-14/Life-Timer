@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.back-img {
+  background-image: url(./image/mountain.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+}
+.container h1 {
+  display: flex;
+  padding: 10px;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.container1 {
+  display: grid;
+  place-content: center;
+}
+.container1 h1 {
+  display: flex;
+  margin-top: -60px;
+  padding: 10px;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.center {
+  display: none;
+}
+.time-container {
+  position: relative;
+  margin-top: -300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.time-container h2 {
+  line-height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px #fff;
+}
+.time-container div {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
+  margin-top: -38vh;
+}
+.btn button {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+}
+.btn button:hover {
+  scale: 0.97;
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0.471);
+}
+#dateId {
+  display: none;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+#inputId {
+  display: block;
+  padding: 10px 23px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.date button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+}
+.date button:hover {
+  scale: 0.97;
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0.471);
+}
+@media screen and (max-width: 638px) {
+  .time-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+  .container1 h1 {
+    font-size: 30px;
+    margin-top: -10rem;
+    margin-bottom: 30px;
+  }
+}
